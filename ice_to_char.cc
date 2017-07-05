@@ -1517,7 +1517,7 @@ try {
     int64_t time1 = valueStr.time_of_day;
 
     if (dateValue <= 0) { 
-        context->SetError("Invalid date value");
+        //context->SetError("Invalid date value");
         return StringVal::null(); 
          }
     gregorian_calendar::ymd_type ymd = gregorian_calendar::from_day_number(dateValue);
